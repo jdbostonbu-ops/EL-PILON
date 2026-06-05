@@ -6,7 +6,7 @@
 (function() {
     window.t09HandleSubmit = function(event) {
         event.preventDefault();
-        var success = document.getElementById('t09-form-success');
+        const success = document.getElementById('t09-form-success');
         if (success) {
             success.classList.add('visible');
             event.target.reset();

@@ -192,13 +192,13 @@
             .ep2-card p { font-size: 14px; line-height: 1.45; margin: 0 0 14px; color: #4a4334; }
             .ep2-price { display: inline-block; background: #14110c; color: #f4efe3; font-family: ui-monospace, monospace; font-size: 12px; letter-spacing: 1px; padding: 4px 10px; }
             /* decorative quote cell that spans the leftover columns in a row */
-            .ep2-quote { grid-column: 2 / -1; border: 1px solid #14110c; padding: 32px; display: flex; flex-direction: column; justify-content: center; gap: 14px; background: #f4efe3;
+            .ep2-quote { grid-column: 1 / -1; border: 1px solid #14110c; padding: 32px; display: flex; flex-direction: column; justify-content: center; gap: 14px; background: #f4efe3;
                 opacity: 0; transform: translateY(28px); transition: opacity 0.6s ease, transform 0.6s ease; }
             .ep2-quote.ep2-in { opacity: 1; transform: translateY(0); }
             .ep2-quote .ep2-q { font-size: clamp(22px, 2.6vw, 34px); font-weight: 800; line-height: 1.05; text-transform: uppercase; letter-spacing: -0.5px; margin: 0; }
             .ep2-quote .ep2-q-sub { font-size: 14px; line-height: 1.5; margin: 0; color: #4a4334; }
             /* on narrow screens the quote just sits on its own row full-width */
-            @media (max-width: 560px) { .ep2-quote { grid-column: 1 / -1; } }
+            @media (min-width: 560px) { .ep2-quote { grid-column: 2 / -1; } }
             /* single-cell decorative fill (occupies just one empty grid cell) */
             .ep2-quote-cell { border: 1px solid #14110c; padding: 32px; display: flex; flex-direction: column; justify-content: center; gap: 12px; background: #f4efe3;
                 opacity: 0; transform: translateY(28px); transition: opacity 0.6s ease, transform 0.6s ease; }
